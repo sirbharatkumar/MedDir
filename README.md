@@ -2,8 +2,11 @@
 An API to determine number of patient groups for a given set of people.
 
 Development Enviornment used:
+
 VS2019
+
 .Net Core 3.1
+
 Postman 8.12.2
 
 Requirement: To determine patient groups for a given people matrix
