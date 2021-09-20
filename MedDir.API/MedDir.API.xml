@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MedDir.API</name>
+    </assembly>
+    <members>
+        <member name="M:MedDir.API.Controllers.PatientGroupsController.CalculatePatientGroups(MedDir.Domain.ApiModels.RequestModel.PatientGroupsRequest)">
+             <summary>
+             Determine number of patient groups from a bunch of people
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST
+                 {
+                     "matrix":
+                         [
+                             [1, 0, 1, 1, 1],
+                             [1, 0, 0, 0, 0],
+                             [1, 0, 0, 0, 1],
+                             [0, 0, 1, 0, 0],
+                             [0, 1, 0, 0, 0],
+                             [0, 1, 0, 0, 1]
+                         ]
+                 }
+            
+             </remarks>
+             <param name="request">Group of people</param>
+             <returns>Number of Patient group</returns>
+             <response code="200">Returns the success response</response>
+             <response code="400">If the input is not valid</response>  
+             <response code="401">Unauthorized Access can't proceed further</response>  
+             <response code="413">Request is large to process</response>  
+        </member>
+        <member name="M:MedDir.API.Controllers.PatientGroupsController.CalculatePatientGroupsDetail(MedDir.Domain.ApiModels.RequestModel.PatientGroupsRequest)">
+             <summary>
+             Determine number of patient groups and their standing position from a bunch of people
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST
+                 {
+                     "matrix":
+                         [
+                             [1, 0, 1, 1, 1],
+                             [1, 0, 0, 0, 0],
+                             [1, 0, 0, 0, 1],
+                             [0, 0, 1, 0, 0],
+                             [0, 1, 0, 0, 0],
+                             [0, 1, 0, 0, 1]
+                         ]
+                 }
+            
+             </remarks>
+             <param name="request">Group of people</param>
+             <returns>Number of Patient group along with standing position</returns>
+             <response code="200">Returns the success response</response>
+             <response code="400">If the input is not valid</response> 
+             <response code="401">Unauthorized Access can't proceed further</response>  
+             <response code="413">Request is large to process</response>  
+        </member>
+    </members>
+</doc>
