@@ -21,7 +21,7 @@ namespace MedDir.Domain.ApiModels.ResponseModel
 
         public string InfectedPercentageDisplay
         {
-            get { return string.Format("{0}% percentage of people are currently infected.", InfectedPercentage.ToString("N")); }
+            get { return string.Format("{0}% percentage of people are currently infected.", InfectedPercentage.ToString("00")); }
         }
 
         public List<PatientModel> PatientDetails { get; set; }
