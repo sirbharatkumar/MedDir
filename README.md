@@ -14,7 +14,9 @@ Approach:
 Following approach will get all the patients from a single source, before going to next individual.
 
 API Swagger details:
+
 https://meddir.azurewebsites.net/index.html
 
-API Postman file for testing
+API Postman file for testing:
+
 MedDir Postman.postman_collection.json
