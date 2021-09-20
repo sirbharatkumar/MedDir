@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "ef7e0b27-4e71-42e3-8950-7e367e5d3085",
+		"name": "MedDir Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PatientGroup v1.1 Example 1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c36fef5d388e4b6ba1b53ae78d257f26",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "340d11ef14874a61a169c1c169a2815e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"matrix\":\r\n\t[\r\n        [1, 1, 0, 0, 0, 0],\r\n        [0, 1, 0, 0, 0, 0],\r\n        [1, 0, 1, 0, 0, 0],\r\n        [0, 0, 0, 0, 1, 0],\r\n        [0, 0, 0, 0, 0, 1],\r\n        [1, 1, 0, 1, 0, 0]\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{hostName}}/api/patient-groups/calculate HTTP/1.1",
+					"protocol": "https",
+					"host": [
+						"{{hostName}}"
+					],
+					"path": [
+						"api",
+						"patient-groups",
+						"calculate HTTP",
+						"1.1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatientGroup v1.1 Example 2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c36fef5d388e4b6ba1b53ae78d257f26",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "340d11ef14874a61a169c1c169a2815e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"matrix\":\r\n\t[\r\n        [1, 0, 1, 1, 1],\r\n        [1, 0, 0, 0, 0],\r\n        [1, 0, 0, 0, 1],\r\n        [0, 0, 1, 0, 0],\r\n        [0, 1, 0, 0, 0],\r\n        [0, 1, 0, 0, 1]\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{hostName}}/api/patient-groups/calculate HTTP/1.1",
+					"protocol": "https",
+					"host": [
+						"{{hostName}}"
+					],
+					"path": [
+						"api",
+						"patient-groups",
+						"calculate HTTP",
+						"1.1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatientGroup Details v2.0 Example 1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c36fef5d388e4b6ba1b53ae78d257f26",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "340d11ef14874a61a169c1c169a2815e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"matrix\":\r\n\t[\r\n        [1, 1, 0, 0, 0, 0],\r\n        [0, 1, 0, 0, 0, 0],\r\n        [1, 0, 1, 0, 0, 0],\r\n        [0, 0, 0, 0, 1, 0],\r\n        [0, 0, 0, 0, 0, 1],\r\n        [1, 1, 0, 1, 0, 0]\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{hostName}}/api/patient-groups-detail/calculate HTTP/2.0",
+					"protocol": "https",
+					"host": [
+						"{{hostName}}"
+					],
+					"path": [
+						"api",
+						"patient-groups-detail",
+						"calculate HTTP",
+						"2.0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatientGroup Details v2.0 Example 2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c36fef5d388e4b6ba1b53ae78d257f26",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "340d11ef14874a61a169c1c169a2815e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"matrix\":\r\n\t[\r\n        [1, 0, 1, 1, 1],\r\n        [1, 0, 0, 0, 0],\r\n        [1, 0, 0, 0, 1],\r\n        [0, 0, 1, 0, 0],\r\n        [0, 1, 0, 0, 0],\r\n        [0, 1, 0, 0, 1]\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{hostName}}/api/patient-groups-detail/calculate HTTP/2.0",
+					"protocol": "https",
+					"host": [
+						"{{hostName}}"
+					],
+					"path": [
+						"api",
+						"patient-groups-detail",
+						"calculate HTTP",
+						"2.0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "hostName",
+			"value": "meddir.azurewebsites.net"
+		},
+		{
+			"key": "localHostName",
+			"value": "localhost:44382"
+		}
+	]
+}
