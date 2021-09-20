@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MedDir.API/bin
+/MedDir.API/obj
+/MedDir.API/Properties/PublishProfiles
+/MedDir.Domain/bin
+/MedDir.Domain/obj
+/MedDir.UnitTest/obj
+/MedDir.UnitTest/bin/Debug/netcoreapp3.1
