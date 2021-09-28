@@ -27,6 +27,7 @@ namespace MedDir.API
                          logging.ClearProviders();
                          logging.AddConsole();
                          logging.AddAzureWebAppDiagnostics();
+                         logging.AddApplicationInsights();
                      });
                 });
     }

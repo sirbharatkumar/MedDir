@@ -33,6 +33,8 @@ namespace MedDir.API
         {
             services.AddControllers().AddNewtonsoftJson();
 
+            services.AddApplicationInsightsTelemetry();
+
             // Set API versioning defaulted to 1.0
             services.AddApiVersioning(x =>
             {
@@ -48,7 +50,7 @@ namespace MedDir.API
 
             services.AddScoped<IUserService, UserService>();
 
-            services.AddScoped<IPatientGroupsService, PatientGroupsService>();
+            services.AddScoped<IPatientGroupsService, PatientGroupsParallelService>();
             #endregion
 
             #region Swagger defination
